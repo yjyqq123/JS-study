@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        var txt= new String("String")
+        var txt="string";
+
+        var str= 'Hello, siry'
+        var a=str. toLowerCase();
+        var b=str. toUpperCase();
+        var c="Hello world".trim()
+
+        var n=str. indexOf("welcome");
+        var b=str. indexOf("loen");
+
+        var n=str. replace("blue","red");
+        var c=str. replace("/blue/g","red");
+        document. write(str. substring(3)+"<br>");
+        document. write(str. substring(3,7));
+
+        var winInnerHeight=window. innerHeight;
+        var winInnerwidth=window. innerWidth;
+        var winOuterWidth=window. outerWidth;
+        var winScreenLeft=window. screenLef;
+        var winScreenTop=window. screenTop;
+
+        function open_win(){
+            window.open("http: //www/baidu. com");
+        }
+        function openwin(){
+            myWindow=window. open('','','width=200,height=100');
+            myWindow.document. write("<p>这是我的窗口</p>")
+            myWindow.focus();
+        }
+        var myWindow=window. open("", "","width=200. height=100");
+        myWindow. document. write("<p>这是一个新窗口'</p>");
+        setTimeout(function() {myWindow. close()}, 3000);
+
+        var myVar;
+        function myFunction(){
+            myVar = setTimeout(function(){
+              alert("Hello") } ,3000);
+        }
+            
+        function myStopFunction(){
+            clearTimeout(myVar);
+        }
+
+        var text = '{"employees":[' +
+            '{"name":"baidu","site":"http://www.baidu.com" },' +
+            '{"name":"taobao","site":"http://www.taobao.com" },' +
+            '{"name":"google","site":"http://www.google.com"}]}';
+        obj=JSON.parse(text);
+        document.getElementById ("demo").innerHTML=
+            obj.employees[1].name+" "+obj. employees[1]. site;
+        
+
+        JSON. parse('{"1":1,"2":2,"3":{"4":4,"5":{"6":6}}}',function(k, v){
+            console.log(k);
+            return v;
+        })
+
+
+        var str  =  {"name": "baidu", "site": "http://www.baidu.com"}; 
+        str_pretty1 = JSON.stringify(str);
+        document. write("只有一个参数:"); 
+        document. write("<br>");
+        document. write("<pre>" + str_pretty1 + "</pre>");
+       
+        document. write("<br>");
+        str_pretty2=JSON.stringify(str , null , 4)
+        document. write("使用参数情况");
+        document. write("<br>");
+        document. write("<pre>"+str_pretty2+"</pre>");
+
+
+
+        var number = Math. sqrt(4);
+        document. write(number);
+
+    
+        var n= prompt("请输入一个数字:","");
+        var answer=Math.sqrt(n);
+        alert("数字" + n + "的平方根是:" + answer);
+
+        Math. floor(45.95); 
+        Math. floor(45.05);
+        Math. floor(4);
+        Math. floor(-45.05); 
+        Math. floor(-45.95);
+
+        Math. floor((Math. random()*10)+1);
+
+        x=Math. round(20.49);
+        x=Math. round(20.5);
+        x=Math. round(-20.5);
+        x=Math. round(-20.51);
+
+
+        var d = new Date();
+
+        var d1 = new Date(86400000);
+        var d2 = new Date("October 19,2017 15:56:00");
+        var d3 = new Date(88,5,11,11,42,0,0);
+
+        function printTime(){
+            var d = new Date();
+            var hours=d.getHours();
+            var mins=d. getMinutes();
+            var secs=d. getSeconds();
+            document.body. innerHTML= hours+":"+mins+":"+secs;
+        }
+        setInterval(printTime , 1000);
+
+    </script>
+</body>
+</html>

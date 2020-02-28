@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        var myCars= new Array('Saab','Volvo','BMW')
+
+        var mycars= new Array()
+        mycars [0]='Saab'
+        mycars [1]='Volvo'
+        mycars [2]='BMW'
+        mycars [3]='Lincoln'
+
+        var a=[];
+        a[0]='zero';
+        a[1]='one';
+        a.push('zero')
+        a.push('one','two')
+
+        var oneDown=[1,4,6].pop();
+        var oneDown=[1,4,6].shift();
+
+        var a=[' zero']
+        a. unshift('one')
+
+        var c1= ['HTMl', 'CSS']
+        var c2= ['js', 'java']
+        var courses=c1. concat(c2)
+
+
+        var numbers=[64,45,72,11,49]
+        function myFunction(item, index){
+        var demo= document. getElementById('demo')
+        demo. innerHTML=
+            demo. innerHTML+'index['+index+']: '+item+'<br>'
+        }
+        numbers. forEach(myFunction)
+
+        var fruits=['香蕉','橙子','苹果','苹果']
+        var a = fruits.indexOf('苹果')
+        console.log(a);
+        var b = fruits.indexOf('樱桃')
+        console.log(b);
+
+        var fruits=['Banana','Orange','Lemon','Apple','Mango'];
+        var citrus=fruits.slice(1,3);
+
+        var person=[];//空数组
+        person['name']='Loen'
+        person['age' ]=28
+        console.log(person['age'])
+
+    </script>
+</body>
+</html>

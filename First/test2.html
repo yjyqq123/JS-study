@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+     <script>
+        var x = '你好 JavaScript';
+        document.write(x);
+        var Hello = "你好";
+        var age = 20;
+        var live = true;
+        var girlfriend = null;
+        var favsong = undefined;
+        var car = {
+            'name':'宝马',
+            'status':'耗油'
+        };
+
+        var x1 = 20;    //不使用小数点
+        var x2 = 20.00; //使用小数点
+        //x1==x2
+        var y = 123e4;  //1230000
+        var z = 123e-4; //0.0123
+
+        var sayHello = 'Hello! \'我是郁杰原.\' ';
+
+        var a;
+        typeof a;//"undefined"
+
+        var b=11;
+        typeof b;//"numble"
+
+        b = a;
+        typeof b;//"undefined"
+
+        typeof undefined === "undefined"//true
+        typeof true === "boolean"//true
+        typeof 42 === "number"//true
+        typeof "42" === "string"//true
+        typeof {life:42} === "object"//true
+
+        typeof Symbol() === "symbol"//true
+
+        var x = 12+3;
+        document.write(x);
+
+        var x = 10;
+        var y = x+7+20+45+6548;
+        document.write(x);
+
+        var x = 10*9;
+        document.write(x);
+
+        var x = 100/5;
+        document.write(x);
+
+        var num = 10;
+        console.log(num == 8)   //->false
+
+        var condition =true
+        var value1 = "输出value1"
+        var value2 = "输出value2"
+        var variable =(condition) ? value1 :value2
+        
+        var coursename1 = "JavaScript";
+        var coursename2 = "javascript";
+
+        var character = coursename1[5];
+
+        var intro = "I'm Loen";
+        var answer = 'He is called "Lusi"';
+        
+        var len = coursename1.length;
+        document.write(coursename1+coursename2);
+        coursename1[2] = 'd';
+        coursename1 = 'JavaScript'
+         
+    </script>
+</body>
+</html>

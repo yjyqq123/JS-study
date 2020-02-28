@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = 'Visit w3cschool';
+        var n = str. search( /w3cschool/i);
+
+
+        var str ='Visit w3cschool!';
+        n = str.search('w3cschool');    
+
+
+        str = 'Visit Microsoft!';
+        var res = str. replace(/microsoft/i, 'w3cschool');
+        document. write(str)
+        document. write(res)
+
+        str = 'Visit Microsoft!'
+        res = str. replace('Microsoft', 'w3cschool')
+        document. write(res)
+
+        var patt =/e/;
+        document. write(patt. test ('The best things in life are free!'))
+
+        var patt1 = new RegExp('e')
+        document. write(patt1. test('The best things in life are free')) 
+        patt1. compile('d')
+        document. write(patt1. test('The best things in life are free'))
+    </script>
+</body>
+</html>

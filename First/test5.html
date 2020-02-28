@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var person = {
+             name: 'YJY',
+             age: 20,
+             favColor: 'black',
+             height: 178    
+         }
+         var x= person.age
+         var y= person ['age']
+
+         var course = {name:'JS', lessons: 54}
+         console.log(person.name. length)
+
+         var ourDog = {
+             name: 'wangcai',
+             age: 2,
+             tails: 1,
+             friends: ['everything!']   
+         }
+         ourDog.name = 'happy wangcai'
+         ourDog['name']= 'happy wangcai'
+         var c1= ourDog['tails']
+         delete ourDog['tails']
+         var c2= ourDog['tails']
+         console. log(ourDog)
+
+         var message = 'Hello world!'
+         var x = message.toUpperCase();
+
+
+         var a='age'
+         var myobj={     
+         name: 'Loen',
+         age: '20',
+         eat: function(){
+            return "I'm eating"
+         }
+        }
+        console.log(myobj['name'])
+        console.log(myobj[a])
+        console.log(myobj['eat']())
+
+
+        // function person(firstname, lastname, age, eyecolor){
+        // this.firstname=firstname;
+        // this.lastname=lastname;
+        // this.age=age;
+        // this.eyecolor=eyecolor;
+        // }
+
+        // var myFather = new person('John','Doe',50,'blue')
+        // var myMather = new person('Sally', 'Rally', 48, 'green') 
+        // console.log(myFather.age)
+        // console.log(myMather.firstname)
+
+        var John = {
+            name: 'John',
+            age: 25
+        }
+
+        var Loen ={
+            name: 'Loen',
+            age: 25
+        }
+
+        function student(name, age){
+            this.name = name
+            this.age = age
+            this.changName = function(name){
+                this.name = name
+            }
+        }
+       
+
+        function Car(make, model, year) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+        }
+        var mycar = new Car("Eagle", "Talon TSi", 1993);
+        console.log(mycar.make);
+
+
+    </script>
+</body>
+</html>

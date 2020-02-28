@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 10;
+        if(num < 20){
+            document.write("在线学习JavaScript很简单");
+        }
+
+
+        var course = 1;
+        if(course = 1){
+            document. write("<h1>html教程</h1>");
+        }
+        else if(couese = 2){
+            document. write("<h1>css教程</h1>");
+        }else{
+            document. write("<h1>js教程</h1>")
+        }
+
+        function myFunction(){
+            var x;
+            var d=new Date().getDate();
+            switch(d){
+                case 0:x="今天周日"
+                break;
+                case 1:x="今天周一"
+                break;
+                case 2:x="今天周二"
+                break;
+                case 3:x="今天周三"
+                break;
+                case 4:x="今天周四"
+                break;
+                case 5:x="今天周五"
+                break;
+                case 6:x="今天周六"
+                break;
+            }
+            return x;
+        }
+        alert(myFunction());
+
+        var cars=['大众','奔驰','宝马','丰田','路虎','福特'];
+        for(var i=0; i < cars.lenth; i++){
+            document. write(cars[i]+'<br>');
+        }
+
+        var myArray = [];
+        for(var i=1; i<10; i+=2){
+            myArray.push(i);
+        }
+
+        var x = '', i=0;
+        do{
+            x=x +'The number is '+ i +'<br>';
+            i++;
+        }
+        while(i<5);
+        document. write(x);
+
+        var x= '';
+        for(i=0;i<=10;i++){
+            if(i == 3){
+                continue;
+            }
+            x='数值是:' + i +'br>';
+            document.write(x);
+        }
+        
+    </script>
+</body>
+</html>
