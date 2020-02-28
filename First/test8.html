@@ -20,86 +20,99 @@
     }
 </style>
 <body>
+    <a href="http://www.baidu.com">百度</a>
     <div id="container">
-        <div id = "box">
-        </div>
+      <div id="box"></div>
     </div>
-</body>
-<script>
-    // var t = setInterval(move, 500)
-    // var pos = 0;
-    // var box = document.getElementById('box')
-    // function move() {
-    //   pos += 1;
-    //   box.style.left = pos + 'px';
-    // }
+    <div class="demo">
+      <span class="demo">Hi I'm Loen!</span>
+    </div>
+    <div id="demo2" style="width:200px">一些文本</div>
+    <p>hi</p>
+    <p>hello</p>
+    <p>hi</p>
+    <p class="demo">This is a paragraph</p>
+    <div id="demo">
+      <p>一些文本</p>
+      <p>另一些文本</p>
+    </div>
+    <div id="demo3">  <p id="p1">这是一个段落.</p> 
+         <p id="p2">这是另外一个段落.</p> 
+        </div>
+        <p id="demo4">  
+            <p id="p1">这是一个段落</p>  
+            <p id="p2">这是另一个段落</p>
+     </p>
+     <script>
+    var t = setInterval(move, 500)
+    var pos = 0;
+    var box = document.getElementById('box')
+    function move() {
+      pos += 1;
+      box.style.left = pos + 'px';
+    }
 
-    // var t = setInterval(move, 10)
+    var t = setInterval(move, 10)
 
-    // function move() {
-    //     if(pos >= 540) {
-    //             clearInterval(t);
-    //           }  else {
-    //                pos += 1;
-    //                 box.style.left = pos+"px";
-    //           }
-    // }
+    function move() {
+        if(pos >= 540) {
+                clearInterval(t);
+              }  else {
+                   pos += 1;
+                    box.style.left = pos+"px";
+              }
+    }
 
-    // var pos = 0 
-    // var box = document.getElementById('box')
-    // var t = setInterval(move, 10)
-    // function move() {
-    //   if (pos >= 540) {
-    //     clearInterval(t)
-    //   } else {
-    //     pos += 1
-    //     box.style.left = pos + 'px'
-    //   }
-    // }
+    var pos = 0 
+    var box = document.getElementById('box')
+    var t = setInterval(move, 10)
+    function move() {
+      if (pos >= 540) {
+        clearInterval(t)
+      } else {
+        pos += 1
+        box.style.left = pos + 'px'
+      }
+    }
 
-    // document.body.innerHTML = 'Some text'
-    // document.write(document.getElementById(id))
 
-    // document.getElementsByClassName(name)
-    // document.write(document.getElementById(id))
+    document.getElementsByClassName(name)
+    document.write(document.getElementById(id))
 
-    // document.getElementsByTagName(name)
-    // document.write(document.getElementById(id))
+    document.getElementsByTagName(name)
+    document.write(document.getElementById(id))
 
-    // var elem = document.getElementById('demo')
-    // elem.innerHTML = 'Hello World'
+    var elem = document.getElementById('demo')
+    elem.innerHTML = 'Hello World'
 
-    // var arr = document.getElementsByClassName('demo')
-    // arr[1].innerHTML = 'Hi I am Peter'
+    var arr = document.getElementsByClassName('demo')
+    arr[1].innerHTML = 'Hi I am Peter'
 
-    // var arr = document.getElementsByTagName('p')
-    // for (var x = 0; x < arr.length; x++) {
-    //   arr[x].innerHTML = 'Hi there'
-    // }
+    var arr = document.getElementsByTagName('p')
+    for (var x = 0; x < arr.length; x++) {
+      arr[x].innerHTML = 'Hi there'
+    }
 
-    // var a = document.getElementById('demo')
-    // var arr = a.childNodes
-    // for (var x = 0; x < arr.length; x++) {
-    //   arr[x].innerHTML = '新的文本'
-    // }
+    var a = document.getElementById('demo')
+    var arr = a.childNodes
+    for (var x = 0; x < arr.length; x++) {
+      arr[x].innerHTML = '新的文本'
+    }
 
-    // var el = document.getElementById('my-img') 
-    // el.src = '1.jpg'
+    var el = document.getElementById('my-img') 
+    el.src = '1.jpg'
 
-    // var el = document.getElementsByTagName('a')
-    // el[0].href = 'https://www.google.cn'
-    // el[0].innerHTML = 'google'
+    var el = document.getElementsByTagName('a')
+    el[0].href = 'https://www.google.cn'
+    el[0].innerHTML = 'google'
 
-    // var p = document.createElement("p"); 
-    // var node = document.createTextNode("这是新的文本");
-    // p.appendChild(node);
-
-    // var parent = document.getElementById("demo");
-    // div.appendChild(p);
-
-    // var parent = document.getElementById("demo4");
-    // var child = document.getElementById("p1");
-    // parent.replaceChild(p, child);
+    var div= document. getElementById("demo");
+    div. appendchild(p);
+    var child=document. getElementById ("p1");
+    div. removeChild(child);
+    parent. replaceCchild(p, child)
 </script>
+</body>
+
 
 </html>

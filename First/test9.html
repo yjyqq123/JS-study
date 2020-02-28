@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="tip">这边显示提示</p>
+    <!-- <p id="tip">这边显示提示</p>
     <h2 id="tip">这边显示提示</h2>
     <hr />
     <p onclick="clickfn()">点击我看看</p>
@@ -15,15 +15,84 @@
     <br /><br />
     <div onmousemove="moverfn()" onmouseout="moutfn()">
       鼠标移动进来看看
-    </div> 
+    </div> -->
 
-    <button onclick="show()">点击我</NOtton>
+    <!-- <button onclick="show()">点击我</NOtton>
     <script>
       function show() {
-        alert('你好，我在这里！');
+        alert('你好，我在这里！')
       }
-    </script>
+    </script> -->
+
+    <!-- <input type="text" id="name" onchange="change()" />
+    <script>
+      function change() {
+        var x = document.getElementById('name')
+        x.value = x.value.toUpperCase()
+      }
+    </script> -->
+
+    <!-- <p>该实例使用了 addEventListener() 方法向文档中添加点击事件。</p>
+    <p>尝试点击文档的任何地方。</p>
+    <p id="demo"></p>
+    <script>
+      document.addEventListener('click', function() {
+        document.getElementById('demo').innerHTML = 'Hello World!'
+      })
+    </script> -->
+
+    <!-- <p>使用 the addEventListener() 方法向文档添加许多事件。</p>
+    <p id="demo"></p>
+    <script>
+      document.addEventListener('mouseover', myFunction)
+      document.addEventListener('click', mySecondFunction)
+      document.addEventListener('mouseout', myThirdFunction)
+      function myFunction() {
+        document.getElementById('demo').innerHTML += 'Moused over!<br>'
+      }
+      function mySecondFunction() {
+        document.getElementById('demo').innerHTML += 'Clicked!<br>'
+      }
+      function myThirdFunction() {
+        document.getElementById('demo').innerHTML += 'Moused out!<br>'
+      }
+    </script> -->
+
+    <!-- 删除事件监听：可以使用removeEventListener删除事件监听 -->
+    <!-- <button id="demo">开始</NOtton>
+    <script>
+      var btn = document.getElementById('demo')
+      btn.addEventListener('click', myFunction)
+      function myFunction() {
+        alert(Math.random())
+        btn.removeEventListener('click', myFunction)
+      }
+    </script> -->
 
     
+
+    <form onsubmit="return validate()" method="POST">
+        Number:<input type="text" name="num1" id="num1" />
+        <br />
+        Repeat:<input type="text" name="num2" id="num2" />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+      <script>
+        function validate() {
+          var n1 = document.getElementById('num1')
+          var n2 = document.getElementById('num2')
+          if (n1.value != '' && n2.value != '') {
+            if (n1.value == n2.value) {
+              return true
+            }
+          }
+          alert('输入两个值不相等，请重新输入！')
+          return false
+        }
+  
+    </script>
+
+
 </body>
 </html>
